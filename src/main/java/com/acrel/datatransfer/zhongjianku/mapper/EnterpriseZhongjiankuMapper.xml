@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.acrel.datatransfer.zhongjianku.mapper.EnterpriseZhongjiankuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.acrel.datatransfer.zhongjianku.model.EnterpriseZhongjianku">
+        <id column="Id" property="id" />
+        <result column="EnterpriseName" property="enterprisename" />
+        <result column="TrustCode" property="trustcode" />
+        <result column="Address" property="address" />
+        <result column="Longitude" property="longitude" />
+        <result column="Latitude" property="latitude" />
+        <result column="Province" property="province" />
+        <result column="City" property="city" />
+        <result column="Area" property="area" />
+        <result column="TradeId" property="tradeid" />
+        <result column="Remark" property="remark" />
+        <result column="ChargePerson" property="chargeperson" />
+        <result column="Phone" property="phone" />
+        <result column="CheckPerson" property="checkperson" />
+        <result column="CheckPhone" property="checkphone" />
+        <result column="LawPerson" property="lawperson" />
+        <result column="LawPhone" property="lawphone" />
+        <result column="OrganizeId" property="organizeid" />
+        <result column="CreateDate" property="createdate" />
+        <result column="IsDeleted" property="isdeleted" />
+        <result column="DataStatus" property="datastatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, EnterpriseName, TrustCode, Address, Longitude, Latitude, Province, City, Area, TradeId, Remark, ChargePerson, Phone, CheckPerson, CheckPhone, LawPerson, LawPhone, OrganizeId, CreateDate, IsDeleted, DataStatus
+    </sql>
+
+</mapper>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.acrel.datatransfer.environment.mapper.MonitorEnvironmentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.acrel.datatransfer.environment.model.MonitorEnvironment">
+        <id column="Id" property="id" />
+        <result column="CodeId" property="codeid" />
+        <result column="MonitorCode" property="monitorcode" />
+        <result column="MonitorName" property="monitorname" />
+        <result column="Location" property="location" />
+        <result column="Remark" property="remark" />
+        <result column="CreateTime" property="createtime" />
+        <result column="IsDeleted" property="isdeleted" />
+        <result column="PowerLimit" property="powerlimit" />
+        <result column="PowerTime" property="powertime" />
+        <result column="ElectricLimit" property="electriclimit" />
+        <result column="ElectricTime" property="electrictime" />
+        <result column="RatedPower" property="ratedpower" />
+        <result column="RatedU" property="ratedu" />
+        <result column="CameraIndexCode" property="cameraindexcode" />
+        <result column="EquipmentUse" property="equipmentuse" />
+        <result column="VideoBackrec" property="videobackrec" />
+        <result column="CodeType" property="codetype" />
+        <result column="EquipmentName" property="equipmentname" />
+        <result column="PolluteType" property="pollutetype" />
+        <result column="WorkshopId" property="workshopid" />
+        <result column="NFCCardId" property="nfccardid" />
+        <result column="NFCAddress" property="nfcaddress" />
+        <result column="APPKey" property="appkey" />
+        <result column="Secret" property="secret" />
+        <result column="ExpireTime" property="expiretime" />
+        <result column="VideoToken" property="videotoken" />
+        <result column="DeviceSerial" property="deviceserial" />
+        <result column="ChannelNo" property="channelno" />
+        <result column="OutFallId" property="outfallid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, CodeId, MonitorCode, MonitorName, Location, Remark, CreateTime, IsDeleted, PowerLimit, PowerTime, ElectricLimit, ElectricTime, RatedPower, RatedU, CameraIndexCode, EquipmentUse, VideoBackrec, CodeType, EquipmentName, PolluteType, WorkshopId, NFCCardId, NFCAddress, APPKey, Secret, ExpireTime, VideoToken, DeviceSerial, ChannelNo, OutFallId
+    </sql>
+
+</mapper>

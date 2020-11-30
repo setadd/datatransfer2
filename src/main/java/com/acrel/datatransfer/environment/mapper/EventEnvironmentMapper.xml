@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.acrel.datatransfer.environment.mapper.EventEnvironmentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.acrel.datatransfer.environment.model.EventEnvironment">
+        <id column="CreateTime" property="createtime" />
+        <result column="Id" property="id" />
+        <result column="SwicthId" property="swicthid" />
+        <result column="MeterId" property="meterid" />
+        <result column="EventType" property="eventtype" />
+        <result column="EventTypeName" property="eventtypename" />
+        <result column="EventLevel" property="eventlevel" />
+        <result column="UnusualType" property="unusualtype" />
+        <result column="IsSubmit" property="issubmit" />
+        <result column="Remark" property="remark" />
+        <result column="Description" property="description" />
+        <result column="EnterpriseId" property="enterpriseid" />
+        <result column="EnterpriseName" property="enterprisename" />
+        <result column="TradeId" property="tradeid" />
+        <result column="TradeName" property="tradename" />
+        <result column="OrganizeId" property="organizeid" />
+        <result column="OrganizeName" property="organizename" />
+        <result column="WorkshopId" property="workshopid" />
+        <result column="WorkshopName" property="workshopname" />
+        <result column="MonitorId" property="monitorid" />
+        <result column="MonitorName" property="monitorname" />
+        <result column="CodeType" property="codetype" />
+        <result column="EquipmentName" property="equipmentname" />
+        <result column="CameraIndexCode" property="cameraindexcode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, CreateTime, SwicthId, MeterId, EventType, EventTypeName, EventLevel, UnusualType, IsSubmit, Remark, Description, EnterpriseId, EnterpriseName, TradeId, TradeName, OrganizeId, OrganizeName, WorkshopId, WorkshopName, MonitorId, MonitorName, CodeType, EquipmentName, CameraIndexCode
+    </sql>
+
+</mapper>

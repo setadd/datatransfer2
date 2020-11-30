@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.acrel.datatransfer.zhongjianku.mapper.EnterpriseproduceZhongjiankuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.acrel.datatransfer.zhongjianku.model.EnterpriseproduceZhongjianku">
+        <id column="Id" property="id" />
+        <result column="EnterpriseId" property="enterpriseid" />
+        <result column="WorkShopId" property="workshopid" />
+        <result column="MonitorId" property="monitorid" />
+        <result column="ProduceSetId" property="producesetid" />
+        <result column="Remark" property="remark" />
+        <result column="CreateTime" property="createtime" />
+        <result column="IsDeleted" property="isdeleted" />
+        <result column="BackUp" property="backup" />
+        <result column="DataStatus" property="datastatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, EnterpriseId, WorkShopId, MonitorId, ProduceSetId, Remark, CreateTime, IsDeleted, BackUp, DataStatus
+    </sql>
+
+</mapper>

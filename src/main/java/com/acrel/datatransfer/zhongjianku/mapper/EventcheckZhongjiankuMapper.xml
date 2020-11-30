@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.acrel.datatransfer.zhongjianku.mapper.EventcheckZhongjiankuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.acrel.datatransfer.zhongjianku.model.EventcheckZhongjianku">
+        <id column="Id" property="id" />
+        <result column="CreateTime" property="createtime" />
+        <result column="HandleId" property="handleid" />
+        <result column="Creator" property="creator" />
+        <result column="CheckPerson" property="checkperson" />
+        <result column="CheckTime" property="checktime" />
+        <result column="CheckResult" property="checkresult" />
+        <result column="Remark" property="remark" />
+        <result column="DataStatus" property="datastatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, CreateTime, HandleId, Creator, CheckPerson, CheckTime, CheckResult, Remark, DataStatus
+    </sql>
+
+</mapper>

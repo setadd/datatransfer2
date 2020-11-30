@@ -1,0 +1,45 @@
+
+spring:
+   #data source config
+  datasource:
+     hikari: 
+        connection-timeout: 60000
+        idle-timeout: 60000
+        max-lifetime: 1800000
+        maximum-pool-size: 60
+        minimum-idle: 10
+     dynamic:
+       primary: envrionment #设置默认的数据源或者数据源组
+       datasource:
+         envrionment:
+           url: jdbc:mysql://127.0.0.1:3306/environment?zeroDateTimeBehavior=convertToNull&autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&noAccessToProcedureBodies=true
+           username: root
+           password: 1234
+           driverClassName: com.mysql.jdbc.Driver
+         zhongjianku:
+           url: jdbc:mysql://127.0.0.1:3306/zhongjianku?zeroDateTimeBehavior=convertToNull&autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&noAccessToProcedureBodies=true
+           username: root
+           password: 1234
+           driverClassName: com.mysql.jdbc.Driver
+
+logging:
+  config: classpath:logback-spring.xml
+  pattern:
+    console: "%d - %msg%n"
+  level: 
+    root: info
+    com.acrel.datatransfer.*.mapper: info
+server:
+  port: 8080
+#canal配置
+canal:
+  client:
+    host：: 127.0.0.1
+    port: 11111
+    batchSize: 1000
+    filter: ^zhongjianku.*\..*
+    retryCount: 5
+    cquireInterval: 1000
+    destination: example
+    userName: root
+    password: 1234

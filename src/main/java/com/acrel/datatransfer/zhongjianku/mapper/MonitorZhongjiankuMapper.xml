@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.acrel.datatransfer.zhongjianku.mapper.MonitorZhongjiankuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.acrel.datatransfer.zhongjianku.model.MonitorZhongjianku">
+        <id column="Id" property="id" />
+        <result column="MonitorName" property="monitorname" />
+        <result column="Remark" property="remark" />
+        <result column="CreateTime" property="createtime" />
+        <result column="IsDeleted" property="isdeleted" />
+        <result column="PowerLimit" property="powerlimit" />
+        <result column="PowerTime" property="powertime" />
+        <result column="ElectricLimit" property="electriclimit" />
+        <result column="ElectricTime" property="electrictime" />
+        <result column="RatedPower" property="ratedpower" />
+        <result column="RatedU" property="ratedu" />
+        <result column="CodeType" property="codetype" />
+        <result column="EquipmentName" property="equipmentname" />
+        <result column="WorkshopId" property="workshopid" />
+        <result column="DataStatus" property="datastatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, MonitorName, Remark, CreateTime, IsDeleted, PowerLimit, PowerTime, ElectricLimit, ElectricTime, RatedPower, RatedU, CodeType, EquipmentName, WorkshopId, DataStatus
+    </sql>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.acrel.datatransfer.environment.mapper.MeterEnvironmentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.acrel.datatransfer.environment.model.MeterEnvironment">
+        <id column="Id" property="id" />
+        <result column="SwicthId" property="swicthid" />
+        <result column="MeterId" property="meterid" />
+        <result column="CollectType" property="collecttype" />
+        <result column="Model" property="model" />
+        <result column="Type" property="type" />
+        <result column="CreateTime" property="createtime" />
+        <result column="UpdateTime" property="updatetime" />
+        <result column="PT" property="pt" />
+        <result column="CT" property="ct" />
+        <result column="IsShow" property="isshow" />
+        <result column="IsDeleted" property="isdeleted" />
+        <result column="Remark" property="remark" />
+        <result column="MeterSN" property="metersn" />
+        <result column="EnterpriseId" property="enterpriseid" />
+        <result column="MonitorId" property="monitorid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, SwicthId, MeterId, CollectType, Model, Type, CreateTime, UpdateTime, PT, CT, IsShow, IsDeleted, Remark, MeterSN, EnterpriseId, MonitorId
+    </sql>
+
+</mapper>
